@@ -10,8 +10,8 @@ Ext.define('abheda_cross.view.Main', {
 
         items: [
             {
-                title: 'Welcome',
-                iconCls: 'home',
+                title: 'Lessons',
+                iconCls: 'compose',
 
                 styleHtmlContent: true,
                 scrollable: true,
@@ -19,24 +19,22 @@ Ext.define('abheda_cross.view.Main', {
                 items: {
                     docked: 'top',
                     xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
+                    title: 'Welcome to Abheda\'s study module'
                 },
 
                 html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
+                    "chose an option"
                 ].join("")
             },
             {
-                title: 'Get Started',
-                iconCls: 'action',
+                title: 'Quiz',
+                iconCls: 'organize',
 
                 items: [
                     {
                         docked: 'top',
                         xtype: 'titlebar',
-                        title: 'Getting Started'
+                        title: 'Welcome to Abheda\'s quiz module'
                     },
                     {
                         xtype: 'video',
@@ -44,6 +42,22 @@ Ext.define('abheda_cross.view.Main', {
                         posterUrl: 'http://b.vimeocdn.com/ts/261/062/261062119_640.jpg'
                     }
                 ]
+            },{
+                title: 'Info',
+                iconCls: 'info',
+
+                styleHtmlContent: true,
+                scrollable: true,
+
+                items: {
+                    docked: 'top',
+                    xtype: 'titlebar',
+                    title: 'About us'
+                },
+
+                html: [
+                    "chose an option"
+                ].join("")
             }
         ]
     }
